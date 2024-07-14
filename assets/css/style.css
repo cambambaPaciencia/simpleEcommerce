@@ -275,16 +275,21 @@ label{
 .form label{
     padding: var(--default-sz);
     padding-bottom: 13px;
+    margin-inline: auto;
     border: 1px solid #ccc;
     border-radius: calc(var(--default-sz) * 2);
     box-shadow: 0.2rem 0.3rem 1rem #f0f0f0, -0.1rem -0.1rem 1rem #f0f0f0;
+}
+
+.form .form-control{
+    display: inline-block;
 }
 
 .form .ctn{
     cursor: pointer;
     border-radius: calc(var(--default-sz) * 2);
     font-family: 'Poppins', 'Open Sans', sans-serif;
-    padding: var(--default-sz) calc(var(--default-sz) * 2);
+    margin-top: 0;
 }
 
 /*--------------------------------------------------------------
@@ -294,6 +299,7 @@ label{
     margin-top: var(--default-sz);
     background-color: var(--main-);
     padding: var(--default-sz);
+    padding-bottom: 0;
     
 }
 
@@ -301,6 +307,7 @@ label{
     width: 80%;
     margin: 0 auto;
     display: flex;
+    padding-bottom: var(--default-sz);
     
 }
 
@@ -341,12 +348,11 @@ label{
 }
 
 .footer-bottom{
-    width: 30%;
     color: var(--thirdy-color);
     text-align: center;
-    margin-inline: auto;
-    border-top: 1px solid #ccc;
-    margin-top: var(--default-sz);
+    padding: var(--default-sz);
+    background-color: var(--main-color);
+    font-size: 15px;
 }
 
 .footer-bottom span{
@@ -418,8 +424,6 @@ label{
         font-size: calc(var(--default-sz) * 2);
     }
 
-
-
 /*--------------------------------------------------------------
 # Hero
 --------------------------------------------------------------*/
@@ -442,6 +446,22 @@ label{
     .contact .description{
         width: 100%;
     }
+
+    .form label{
+        display: block;
+        width: 90%;
+        padding: 5px 0;
+    }
+    
+    .form .form-control{
+        display: inline-block;
+        width: 50%;
+    }
+
+    .form .ctn{
+        width: auto;
+    }
+    
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -459,5 +479,27 @@ label{
         width: 100%;
         margin-bottom: var(--default-sz);
     }
+
+}
+
+
+@media ( width <= 567px) {
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+ /*   .form label{
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form label .form-control{
+        border-radius: calc(var(--default-sz) * 2);
+        padding: var(--default-sz);
+    }**/
 
 }
