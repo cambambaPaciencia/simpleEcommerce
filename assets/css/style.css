@@ -100,7 +100,9 @@ header{
 
 label{
     background-color: var(--secondary-color);
-    border-radius: var(--default-sz);
+    border-radius: calc(var(--default-sz) + 2px);
+    border: 1px solid var(--secondary-color);
+    
 }
 
 .navbar .col-2 .fa-search{
@@ -112,7 +114,6 @@ label{
     outline: none;
     border: none;
     border-radius: var(--default-sz);
-    padding: calc(var(--default-sz) / 2);
     background-color: var(--secondary-color);
     font-family: 'Poppins', 'Open Sans', sans-serif;
 }
