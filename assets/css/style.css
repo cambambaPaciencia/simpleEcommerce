@@ -11,7 +11,7 @@
 --------------------------------------------------------------*/
 :root{
     --primary-color: #111;
-    --primary-color-hv:#cdcbcb;
+    --primary-color-hv:#e6dede;
     --main-color:#f8f4f5;
     --secondary-color:#fff;
     --thirdy-color:#333;
@@ -69,7 +69,7 @@ header{
     padding: calc(var(--default-sz) / 2) var(--default-sz);
 }
 
-.navbar .col{
+.navbar .col-1{
     display: flex;
     align-items: center;
 }
@@ -95,38 +95,39 @@ header{
 }
 
 .menu-item .nav-link:hover{
-    color: var(--primary-color-hv);
+    color: #8242be;
 }
 
-.navbar .col label{
+label{
     background-color: var(--secondary-color);
     border-radius: var(--default-sz);
 }
 
-.navbar .col .fa-search{
+.navbar .col-2 .fa-search{
     padding-left: 8px;
     font-size: 14px;
 }
 
-.navbar .col .form-control{
+.form-control{
     outline: none;
     border: none;
     border-radius: var(--default-sz);
-    background-color: var(--secondary-color);
     padding: calc(var(--default-sz) / 2);
+    background-color: var(--secondary-color);
+    font-family: 'Poppins', 'Open Sans', sans-serif;
 }
 
 .form-control::placeholder{
     font-family: 'Poppins', 'Open Sans', sans-serif;
 }
 
-.navbar .col .user-profile{
+.navbar .col-2 .user-profile{
     color: var(--primary-color);
     font-size: calc(var(--default-sz) * 2);
     margin-inline: var(--default-sz);
 }
 
-.navbar .col .cart-shopping{
+.navbar .col-2 .cart-shopping{
     color: var(--primary-color);
     font-size: calc(var(--default-sz) * 2);
     position: relative;
@@ -139,8 +140,12 @@ header{
     left: 70%;
     height: var(--default-sz);
     width: var(--default-sz);
-    background-color: #f5460c;
+    background-color: #8242be;
     border-radius: 50%;
+}
+
+.menuBtn{
+    display: none;
 }
 
 /*--------------------------------------------------------------
@@ -216,6 +221,7 @@ header{
     margin: var(--default-sz);
     width: 220px;
     cursor: pointer;
+    border: 1px solid var(--border-color);
     border-radius: var(--default-sz);
     background-color: var(--main-color);
     box-shadow: 0.2rem 0.3rem 1rem #f0f0f0, -0.1rem -0.1rem 1rem #f0f0f0;
@@ -241,4 +247,216 @@ header{
 
 .card .card-text .price{
     font-size: 16px ;
+}
+
+.card .card-text .fa-plus-circle{
+    color: #6928a6;
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact{
+    padding: calc(var(--default-sz) * 2);
+    text-align: center;
+    background-color: var(--main-color);
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.contact .description{
+    margin: var(--default-sz) auto;
+    color: var(--thirdy-color);
+    width: 50%;
+    font-size: 18px;
+}
+
+.form label{
+    padding: var(--default-sz);
+    padding-bottom: 13px;
+    border: 1px solid #ccc;
+    border-radius: calc(var(--default-sz) * 2);
+    box-shadow: 0.2rem 0.3rem 1rem #f0f0f0, -0.1rem -0.1rem 1rem #f0f0f0;
+}
+
+.form .ctn{
+    cursor: pointer;
+    border-radius: calc(var(--default-sz) * 2);
+    font-family: 'Poppins', 'Open Sans', sans-serif;
+    padding: var(--default-sz) calc(var(--default-sz) * 2);
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+    margin-top: var(--default-sz);
+    background-color: var(--main-);
+    padding: var(--default-sz);
+    
+}
+
+.footer-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    
+}
+
+.footer-container .nav-menu{
+    width: 50%;
+}
+
+.footer-container .nav-menu h4{
+    font-size: 18px;
+}
+
+
+.footer-container .nav-menu .menu-item{
+    display: block;
+    
+}
+
+.footer-container .nav-menu .nav-link{
+    font-weight: normal;
+}
+
+.footer-container .nav-menu .nav-link:hover{
+    font-weight: 500;
+    padding-left: var(--default-sz);
+}
+
+.footer-container .social-link{ 
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--thirdy-color);
+    margin-left: var(--default-sz);
+}
+
+.footer-container .social-link:hover{
+    color: #8242be;
+    scale: 1.2;
+}
+
+.footer-bottom{
+    width: 30%;
+    color: var(--thirdy-color);
+    text-align: center;
+    margin-inline: auto;
+    border-top: 1px solid #ccc;
+    margin-top: var(--default-sz);
+}
+
+.footer-bottom span{
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+/*--------------------------------------------------------------
+# Mobile Responsivity
+--------------------------------------------------------------*/
+@media screen and (width <= 858px) {
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+    section{
+        width: 100%;
+    }
+
+/*--------------------------------------------------------------
+# Navigation Bar
+--------------------------------------------------------------*/
+
+    header{
+        width: 95%;
+        margin-bottom: var(--default-sz);
+    }
+
+    .navbar .nav-menu .menu-item{
+        display: block;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: var(--font-size);
+    }
+
+    .navbar .nav-menu{
+        width: 90%;
+        position: absolute;
+        top: 15%;
+        left: -100%;
+        background-color: var(--main-color);
+        padding-top: 10px;
+    }
+
+    .col-2{
+        text-align: center;
+        width: 90%;
+        position: absolute;
+        top:10%;
+        left: -100%;
+        background-color: var(--main-color);
+        padding-top: 2px;
+        padding-left: 5px;
+    }
+
+    .col-2 label{
+        padding: 8px;
+    }
+
+    .col-2 a{
+        font-size: 25px !important;
+    }
+
+    .showHideMenu{
+        left: 5% !important;
+    }
+
+    .menuBtn{
+        display: inline-block;
+        font-size: calc(var(--default-sz) * 2);
+    }
+
+
+
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+    .hero{
+        flex-direction: column;
+    }
+
+    .hero .col-content{
+        padding-inline: 8px;
+    }
+/*--------------------------------------------------------------
+# Product
+--------------------------------------------------------------*/
+    .product .card{
+        margin-bottom: var(--font-size);
+    }
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+    .contact .description{
+        width: 100%;
+    }
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+    .footer, .footer-bottom{
+        width: 100%;
+        padding-inline: 0;
+    }
+
+    .footer-container{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .footer-container .nav-menu{
+        width: 100%;
+        margin-bottom: var(--default-sz);
+    }
+
 }
