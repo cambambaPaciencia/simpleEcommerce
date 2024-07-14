@@ -1,12 +1,4 @@
 /*--------------------------------------------------------------
-# Font Awesome Icons
---------------------------------------------------------------*/
-@import url('./solid.min.css');
-@import url('./brands.min.css');
-@import url('./regular.min.css');
-@import url('./fontawesome.min.css');
-
-/*--------------------------------------------------------------
 # root
 --------------------------------------------------------------*/
 :root{
@@ -50,6 +42,14 @@ ul{
 
 a{
     text-decoration: none;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--thirdy-color);
 }
 
 /*--------------------------------------------------------------
