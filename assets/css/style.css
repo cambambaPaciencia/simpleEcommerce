@@ -1,0 +1,11 @@
+/* Font Awesome Icons */
+@import url('./solid.min.css');
+@import url('./brands.min.css');
+@import url('./regular.min.css');
+@import url('./fontawesome.min.css');
+
+/* General */
+body{
+    font-family:'Poppins', 'Open Sans', sans-serif !important;
+}
+
