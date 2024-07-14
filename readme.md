@@ -24,6 +24,7 @@ Este é um projeto de uma landing page para um e-commerce, desenvolvido como par
 
 ### Versão Mobile
 
+![Versão Mobile](./assets/layout/mobile-01.png)
 ![Versão Mobile](./assets/layout/mobile-02.png)
 
 ## Como Executar
